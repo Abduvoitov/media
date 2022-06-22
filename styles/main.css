@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.distribute {
+  background-color: #012f34;
+}
+
+.distribute-inner {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.distribute-heading {
+  position: relative;
+  margin: 0;
+  width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.distribute-heading::before {
+  position: absolute;
+  top: -54px;
+  width: 50px;
+  height: 4px;
+  background-color: #f67e7e;
+  content: "";
+}
+
+.distribute-list {
+  width: 445px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.distribute-item {
+  position: relative;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.distribute-item::before {
+  position: absolute;
+  left: -90px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  content: "";
+}
+
+.distribute-item:nth-child(1)::before {
+  background-image: url("../image/indeividuals.png");
+}
+
+.distribute-item:nth-child(2)::before {
+  background-image: url("../image/implement.png");
+}
+
+.distribute-item:nth-child(3)::before {
+  background-image: url("../image/productivity.png");
+}
+
+.distribute-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.distribute-item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+
+.distribute-item-text {
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1000px) {
+  .distribute-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 97px;
+    padding-right: 97px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .distribute-heading {
+    margin-bottom: 64px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .distribute-heading::before {
+    top: -32px;
+  }
+
+  .distribute-list {
+    width: 100%;
+    max-width: 683px;
+    padding-left: 85px;
+  }
+
+  .distribute-item-text {
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .distribute-inner {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .distribute-heading {
+    width: 100%;
+    margin-bottom: 56px;
+  }
+
+  .distribute-item::before {
+    top: -50px;
+  }
+}
